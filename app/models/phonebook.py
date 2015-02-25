@@ -5,7 +5,7 @@ from google.appengine.ext import ndb
 class Phonebook(BasicModel):
     
     Name = ndb.StringProperty(required=True)
-    Number = ndb.IntegerProperty(required=True)
+    Number = ndb.StringProperty(required=True)
 
     class Meta:
         behaviors = (Searchable,)
