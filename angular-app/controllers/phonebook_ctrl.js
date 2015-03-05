@@ -1,4 +1,4 @@
-angular.module('app.controllers').controller('phonebookCtrl',function($scope,PhonebookSvc){
+angular.module('app.controllers').controller('phonebookNewCtrl',function($scope,$location,$modal,$log,PhonebookSvc){
     "use strict"
 
     $scope.phonebooks={};
@@ -26,3 +26,5 @@ angular.module('app.controllers').controller('phonebookCtrl', function($scope,Ph
 	alert("Error Occured!");
     }
 });
+
+
