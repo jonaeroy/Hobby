@@ -7,12 +7,12 @@ angular.module('app.routes', ['ngRoute'])
 
     .config(function($routeProvider, $locationProvider) {
 	$routeProvider
-	    .when('/dashboard', {
-		templateUrl: '/ng/templates/layouts/dashboard.html',
-		controller: 'MainController'
+	    .when('/jmeroy', {
+		templateUrl: '/ng/templates/index.html',
+		controller: ''
 	    })
 	    .otherwise({
-		redirectTo: '/dashboard'
+		redirectTo: '/jmeroy'
 	    });
 
 	// configure html5 to get links working on jsfiddle

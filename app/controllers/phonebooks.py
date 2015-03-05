@@ -1,12 +1,13 @@
-from ferris import Controller,scaffold,route, route_with,messages
+from ferris import Controller, route, route_with,messages
 from ferris.core.ndb import ndb
 from app.models.phonebook import Phonebook
 import json
 
+
 class Phonebooks(Controller):
     class Meta:
         prefix = ('api',)
-        components = (scaffold.Scaffolding, messages.Messaging)
+        components = (messages.Messaging, )
         Model = Phonebook
 
         

@@ -1,5 +1,5 @@
 from ferris.core.ndb import BasicModel
-from ferris.behaviorssearchable import Searchable
+from ferris.behaviors.searchable import Searchable
 from google.appengine.ext import ndb
 
 class Phonebook(BasicModel):
@@ -19,5 +19,5 @@ class Phonebook(BasicModel):
         
     @classmethod
     def list(cls):
-        return cle.query()
+        return cls.query()
     
